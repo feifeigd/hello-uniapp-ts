@@ -1,0 +1,788 @@
+﻿
+E:.
+│  App.vue			OK
+│  main.js
+│  manifest.json
+│  package.json
+│  pages.json
+│  template.h5.html
+│  tree.txt
+│  uni.scss
+│  
+├─common
+│      airport.js
+│      city.data.js
+│      graceChecker.js
+│      html-parser.js
+│      permission.js
+│      uni-nvue.css
+│      uni.css
+│      util.js
+│      
+├─components
+│  │  api-set-tabbar.nvue
+│  │  page-foot.vue
+│  │  page-head.vue
+│  │  product.vue
+│  │  uLink.vue				OK
+│  │  
+│  ├─amap-wx
+│  │  ├─js
+│  │  │      util.js
+│  │  │      
+│  │  └─lib
+│  │          amap-wx.js
+│  │          
+│  ├─im-chat
+│  │      chatinput.vue
+│  │      messageshow.vue
+│  │      
+│  ├─marked
+│  │  │  index.js
+│  │  │  
+│  │  └─lib
+│  │          marked.js
+│  │          
+│  ├─mpvue-citypicker
+│  │  │  mpvueCityPicker.vue
+│  │  │  
+│  │  └─city-data
+│  │          area.js
+│  │          city.js
+│  │          province.js
+│  │          
+│  ├─mpvue-echarts
+│  │  │  .DS_Store
+│  │  │  
+│  │  └─src
+│  │          echarts.vue
+│  │          wx-canvas.js
+│  │          
+│  ├─mpvue-picker
+│  │      mpvuePicker.vue
+│  │      
+│  ├─mpvueGestureLock
+│  │      gestureLock.js
+│  │      index.vue
+│  │      
+│  ├─tab-nvue
+│  │      mediaList.vue
+│  │      
+│  ├─u-charts
+│  │      u-charts.js
+│  │      
+│  ├─uni-badge
+│  │      uni-badge.vue
+│  │      
+│  ├─uni-calendar
+│  │      calendar.js
+│  │      uni-calendar-item.vue
+│  │      uni-calendar.vue
+│  │      
+│  ├─uni-card
+│  │      uni-card.vue
+│  │      
+│  ├─uni-collapse
+│  │      uni-collapse.vue
+│  │      
+│  ├─uni-collapse-item
+│  │      uni-collapse-item.vue
+│  │      
+│  ├─uni-count-down
+│  │      uni-count-down.vue
+│  │      
+│  ├─uni-countdown
+│  │      uni-countdown.vue
+│  │      
+│  ├─uni-drawer
+│  │      uni-drawer.vue
+│  │      
+│  ├─uni-fab
+│  │      uni-fab.vue
+│  │      
+│  ├─uni-fav
+│  │      uni-fav.vue
+│  │      
+│  ├─uni-goods-nav
+│  │      uni-goods-nav.vue
+│  │      
+│  ├─uni-grid
+│  │      uni-grid.vue
+│  │      
+│  ├─uni-grid-item
+│  │      uni-grid-item.vue
+│  │      
+│  ├─uni-icons
+│  │      uni-icons.vue
+│  │      
+│  ├─uni-indexed-list
+│  │      uni-indexed-list.vue
+│  │      
+│  ├─uni-list
+│  │      uni-list.vue
+│  │      
+│  ├─uni-list-item
+│  │      uni-list-item.vue
+│  │      
+│  ├─uni-load-more
+│  │      uni-load-more.vue
+│  │      
+│  ├─uni-nav-bar
+│  │      uni-nav-bar.vue
+│  │      
+│  ├─uni-notice-bar
+│  │      uni-notice-bar.vue
+│  │      
+│  ├─uni-number-box
+│  │      uni-number-box.vue
+│  │      
+│  ├─uni-pagination
+│  │      uni-pagination.vue
+│  │      
+│  ├─uni-popup
+│  │      uni-popup.vue
+│  │      
+│  ├─uni-rate
+│  │      uni-rate.vue
+│  │      
+│  ├─uni-search-bar
+│  │      uni-search-bar.vue
+│  │      
+│  ├─uni-segmented-control
+│  │      uni-segmented-control.vue
+│  │      
+│  ├─uni-status-bar
+│  │      uni-status-bar.vue
+│  │      
+│  ├─uni-steps
+│  │      uni-steps.vue
+│  │      
+│  ├─uni-swipe-action
+│  │      index.wxs
+│  │      mp.js
+│  │      mpother.js
+│  │      uni-swipe-action.vue
+│  │      
+│  ├─uni-swiper-dot
+│  │      uni-swiper-dot.vue
+│  │      
+│  ├─uni-tag
+│  │      uni-tag.vue
+│  │      
+│  ├─uni-title
+│  │      uni-title.vue
+│  │      
+│  └─uParse
+│      └─src
+│          │  wxParse.css
+│          │  wxParse.vue
+│          │  
+│          ├─components
+│          │      wxParseAudio.vue
+│          │      wxParseImg.vue
+│          │      wxParseTemplate0.vue
+│          │      wxParseTemplate1.vue
+│          │      wxParseTemplate10.vue
+│          │      wxParseTemplate11.vue
+│          │      wxParseTemplate2.vue
+│          │      wxParseTemplate3.vue
+│          │      wxParseTemplate4.vue
+│          │      wxParseTemplate5.vue
+│          │      wxParseTemplate6.vue
+│          │      wxParseTemplate7.vue
+│          │      wxParseTemplate8.vue
+│          │      wxParseTemplate9.vue
+│          │      wxParseVideo.vue
+│          │      
+│          └─libs
+│                  html2json.js
+│                  htmlparser.js
+│                  wxDiscode.js
+│                  
+├─hybrid
+│  └─html
+│          local.html
+│          
+├─pages
+│  ├─about
+│  │      about.vue
+│  │      
+│  ├─API
+│  │  ├─action-sheet
+│  │  │      action-sheet.vue
+│  │  │      
+│  │  ├─add-phone-contact
+│  │  │      add-phone-contact.vue
+│  │  │      
+│  │  ├─animation
+│  │  │      animation.vue
+│  │  │      
+│  │  ├─background-audio
+│  │  │      background-audio.vue
+│  │  │      
+│  │  ├─bluetooth
+│  │  │      bluetooth.vue
+│  │  │      
+│  │  ├─brightness
+│  │  │      brightness.vue
+│  │  │      
+│  │  ├─canvas
+│  │  │      canvas.vue
+│  │  │      
+│  │  ├─choose-location
+│  │  │      choose-location.vue
+│  │  │      
+│  │  ├─clipboard
+│  │  │      clipboard.vue
+│  │  │      
+│  │  ├─download-file
+│  │  │      download-file.vue
+│  │  │      
+│  │  ├─file
+│  │  │      file.vue
+│  │  │      
+│  │  ├─fingerprint
+│  │  │      fingerprint.vue
+│  │  │      
+│  │  ├─get-location
+│  │  │      get-location.vue
+│  │  │      
+│  │  ├─get-network-type
+│  │  │      get-network-type.vue
+│  │  │      
+│  │  ├─get-node-info
+│  │  │      get-node-info.vue
+│  │  │      
+│  │  ├─get-system-info
+│  │  │      get-system-info.vue
+│  │  │      
+│  │  ├─get-user-info
+│  │  │      get-user-info.vue
+│  │  │      
+│  │  ├─ibeacon
+│  │  │      ibeacon.vue
+│  │  │      
+│  │  ├─image
+│  │  │      image.vue
+│  │  │      
+│  │  ├─intersection-observer
+│  │  │      intersection-observer.vue
+│  │  │      
+│  │  ├─login
+│  │  │      login.vue
+│  │  │      
+│  │  ├─make-phone-call
+│  │  │      make-phone-call.vue
+│  │  │      
+│  │  ├─map
+│  │  │      map.nvue
+│  │  │      
+│  │  ├─map-search
+│  │  │      map-search.nvue
+│  │  │      
+│  │  ├─modal
+│  │  │      modal.vue
+│  │  │      
+│  │  ├─navigator
+│  │  │  │  navigator.vue
+│  │  │  │  
+│  │  │  └─new-page
+│  │  │          new-page.vue
+│  │  │          
+│  │  ├─on-accelerometer-change
+│  │  │      on-accelerometer-change.vue
+│  │  │      
+│  │  ├─on-compass-change
+│  │  │      on-compass-change.vue
+│  │  │      
+│  │  ├─open-location
+│  │  │      open-location.vue
+│  │  │      
+│  │  ├─pull-down-refresh
+│  │  │      pull-down-refresh.vue
+│  │  │      
+│  │  ├─request
+│  │  │      request.vue
+│  │  │      
+│  │  ├─request-payment
+│  │  │      request-payment.vue
+│  │  │      
+│  │  ├─save-media
+│  │  │      save-media.vue
+│  │  │      
+│  │  ├─scan-code
+│  │  │      scan-code.vue
+│  │  │      
+│  │  ├─set-navigation-bar-title
+│  │  │      set-navigation-bar-title.vue
+│  │  │      
+│  │  ├─share
+│  │  │      share.vue
+│  │  │      
+│  │  ├─show-loading
+│  │  │      show-loading.vue
+│  │  │      
+│  │  ├─sqlite
+│  │  │      sqlite.vue
+│  │  │      
+│  │  ├─storage
+│  │  │      storage.vue
+│  │  │      
+│  │  ├─subnvue
+│  │  │  │  subnvue.vue
+│  │  │  │  
+│  │  │  └─subnvue
+│  │  │          drawer.nvue
+│  │  │          nav.nvue
+│  │  │          popup.nvue
+│  │  │          video-mask.nvue
+│  │  │          
+│  │  ├─toast
+│  │  │      toast.vue
+│  │  │      
+│  │  ├─upload-file
+│  │  │      upload-file.vue
+│  │  │      
+│  │  ├─vibrate
+│  │  │      vibrate.vue
+│  │  │      
+│  │  ├─video
+│  │  │      video.vue
+│  │  │      
+│  │  └─voice
+│  │          voice.vue
+│  │          
+│  ├─component
+│  │  ├─audio
+│  │  │      audio.vue
+│  │  │      
+│  │  ├─button
+│  │  │      button.vue
+│  │  │      
+│  │  ├─canvas
+│  │  │      canvas.vue
+│  │  │      
+│  │  ├─checkbox
+│  │  │      checkbox.vue
+│  │  │      
+│  │  ├─cover-view
+│  │  │      cover-view.nvue
+│  │  │      cover-view.vue
+│  │  │      
+│  │  ├─editor
+│  │  │      editor-icon.css
+│  │  │      editor.vue
+│  │  │      
+│  │  ├─form
+│  │  │      form.vue
+│  │  │      
+│  │  ├─image
+│  │  │      image.vue
+│  │  │      
+│  │  ├─input
+│  │  │      input.vue
+│  │  │      
+│  │  ├─label
+│  │  │      label.vue
+│  │  │      
+│  │  ├─map
+│  │  │      map.nvue
+│  │  │      map.vue
+│  │  │      
+│  │  ├─movable-view
+│  │  │      movable-view.vue
+│  │  │      
+│  │  ├─navigator
+│  │  │  │  navigator.vue
+│  │  │  │  
+│  │  │  ├─navigate
+│  │  │  │      navigate.vue
+│  │  │  │      
+│  │  │  └─redirect
+│  │  │          redirect.vue
+│  │  │          
+│  │  ├─picker
+│  │  │      picker.vue
+│  │  │      
+│  │  ├─picker-view
+│  │  │      picker-view.vue
+│  │  │      
+│  │  ├─progress
+│  │  │      progress.vue
+│  │  │      
+│  │  ├─radio
+│  │  │      radio.vue
+│  │  │      
+│  │  ├─rich-text
+│  │  │      rich-text.vue
+│  │  │      
+│  │  ├─scroll-view
+│  │  │      scroll-view.vue
+│  │  │      
+│  │  ├─slider
+│  │  │      slider.vue
+│  │  │      
+│  │  ├─swiper
+│  │  │      swiper.vue
+│  │  │      
+│  │  ├─switch
+│  │  │      switch.vue
+│  │  │      
+│  │  ├─text
+│  │  │      text.vue
+│  │  │      
+│  │  ├─textarea
+│  │  │      textarea.vue
+│  │  │      
+│  │  ├─video
+│  │  │      video.nvue
+│  │  │      video.vue
+│  │  │      
+│  │  ├─view
+│  │  │      view.vue
+│  │  │      
+│  │  ├─web-view
+│  │  │      web-view.vue
+│  │  │      
+│  │  └─web-view-local
+│  │          web-view-local.vue
+│  │          
+│  ├─extUI
+│  │  ├─badge
+│  │  │      badge.vue
+│  │  │      
+│  │  ├─calendar
+│  │  │      calendar.vue
+│  │  │      
+│  │  ├─card
+│  │  │      card.vue
+│  │  │      
+│  │  ├─collapse
+│  │  │      collapse.vue
+│  │  │      
+│  │  ├─count-down
+│  │  │      count-down.vue
+│  │  │      
+│  │  ├─drawer
+│  │  │      drawer.vue
+│  │  │      
+│  │  ├─fab
+│  │  │      fab.vue
+│  │  │      
+│  │  ├─fav
+│  │  │      fav.vue
+│  │  │      
+│  │  ├─goods-nav
+│  │  │      goods-nav.vue
+│  │  │      
+│  │  ├─grid
+│  │  │      grid.vue
+│  │  │      
+│  │  ├─icon
+│  │  │      icon.1.vue
+│  │  │      icon.2.vue
+│  │  │      icon.vue
+│  │  │      
+│  │  ├─indexed-list
+│  │  │      indexed-list.vue
+│  │  │      
+│  │  ├─list
+│  │  │      list.vue
+│  │  │      
+│  │  ├─load-more
+│  │  │      load-more.vue
+│  │  │      
+│  │  ├─nav-bar
+│  │  │      nav-bar.vue
+│  │  │      
+│  │  ├─notice-bar
+│  │  │      notice-bar.vue
+│  │  │      
+│  │  ├─number-box
+│  │  │      number-box.vue
+│  │  │      
+│  │  ├─pagination
+│  │  │      pagination.vue
+│  │  │      
+│  │  ├─popup
+│  │  │      popup.vue
+│  │  │      
+│  │  ├─rate
+│  │  │      rate.vue
+│  │  │      
+│  │  ├─search-bar
+│  │  │      search-bar.vue
+│  │  │      
+│  │  ├─segmented-control
+│  │  │      segmented-control.vue
+│  │  │      
+│  │  ├─steps
+│  │  │      steps.vue
+│  │  │      
+│  │  ├─swipe-action
+│  │  │      swipe-action.vue
+│  │  │      
+│  │  ├─swiper-dot
+│  │  │      swiper-dot.vue
+│  │  │      
+│  │  ├─tag
+│  │  │      tag.vue
+│  │  │      
+│  │  └─title
+│  │          title.vue
+│  │          
+│  ├─tabBar
+│  │  ├─API
+│  │  │      API.nvue
+│  │  │      
+│  │  ├─component
+│  │  │      component.nvue	OK
+│  │  │      
+│  │  ├─extUI
+│  │  │      extUI.nvue
+│  │  │      
+│  │  └─template
+│  │          template.nvue
+│  │          
+│  └─template
+│      │  .DS_Store
+│      │  
+│      ├─comments
+│      │      comments.vue
+│      │      
+│      ├─crop
+│      │      crop.vue
+│      │      
+│      ├─datachecker
+│      │      datachecker.vue
+│      │      
+│      ├─gesture-lock
+│      │      gesture-lock.vue
+│      │      
+│      ├─global
+│      │      global.vue
+│      │      
+│      ├─im-chat
+│      │      im-chat.vue
+│      │      
+│      ├─lazy-load
+│      │      lazy-load.vue
+│      │      
+│      ├─lazy-load-custom
+│      │      lazy-load-custom.vue
+│      │      
+│      ├─left-category
+│      │      left-category.vue
+│      │      
+│      ├─list-triplex-row
+│      │      list-triplex-row.vue
+│      │      
+│      ├─list-with-badges
+│      │      list-with-badges.vue
+│      │      
+│      ├─list-with-collapses
+│      │      list-with-collapses.vue
+│      │      
+│      ├─list2detail-detail
+│      │      list2detail-detail.vue
+│      │      
+│      ├─list2detail-list
+│      │      list2detail-list.vue
+│      │      
+│      ├─media-list
+│      │      media-list.vue
+│      │      
+│      ├─mpvue-picker
+│      │      mpvue-picker.vue
+│      │      
+│      ├─nav-button
+│      │      nav-button.vue
+│      │      
+│      ├─nav-city-dropdown
+│      │      nav-city-dropdown.vue
+│      │      
+│      ├─nav-default
+│      │      nav-default.vue
+│      │      
+│      ├─nav-dot
+│      │      nav-dot.vue
+│      │      
+│      ├─nav-image
+│      │      nav-image.vue
+│      │      
+│      ├─nav-search-input
+│      │  │  nav-search-input.vue
+│      │  │  
+│      │  └─detail
+│      │          detail.vue
+│      │          
+│      ├─nav-transparent
+│      │      nav-transparent.vue
+│      │      
+│      ├─product-list
+│      │      product-list.vue
+│      │      
+│      ├─scheme
+│      │      scheme.vue
+│      │      
+│      ├─scrollmsg
+│      │      scrollmsg.vue
+│      │      
+│      ├─swiper-vertical
+│      │      swiper-vertical.nvue
+│      │      
+│      ├─tabbar
+│      │  │  news-item.nvue
+│      │  │  tabbar.nvue
+│      │  │  
+│      │  └─detail
+│      │          detail.vue
+│      │          
+│      ├─timeline
+│      │      timeline.vue
+│      │      
+│      ├─ucharts
+│      │      ucharts.vue
+│      │      
+│      ├─uparse-html
+│      │      uparse-html.vue
+│      │      
+│      ├─uparse-md
+│      │      uparse-md.vue
+│      │      
+│      └─vant-button
+│              vant-button.vue
+│              
+├─platforms
+│  └─app-plus
+│      ├─feedback
+│      │      feedback.vue
+│      │      
+│      ├─orientation
+│      │      orientation.vue
+│      │      
+│      ├─proximity
+│      │      proximity.vue
+│      │      
+│      ├─push
+│      │      push.vue
+│      │      
+│      ├─shake
+│      │      shake.vue
+│      │      
+│      └─speech
+│              speech.vue
+│              
+├─static
+│  │  .DS_Store
+│  │  60x60.png
+│  │  api.png
+│  │  apiHL.png
+│  │  apiIndex.png
+│  │  c1.png
+│  │  c2.png
+│  │  c3.png
+│  │  c4.png
+│  │  c5.png
+│  │  c6.png
+│  │  c7.png
+│  │  c8.png
+│  │  c9.png
+│  │  compass.png
+│  │  component.png
+│  │  componentHL.png
+│  │  componentIndex.png
+│  │  extui.png
+│  │  extuiHL.png
+│  │  extuiIndex.png
+│  │  location.png
+│  │  logo.png
+│  │  menu.png
+│  │  nav.png
+│  │  pause.png
+│  │  play.png
+│  │  plus.png
+│  │  record.png
+│  │  shuijiao.jpg
+│  │  stop.png
+│  │  template.png
+│  │  templateHL.png
+│  │  templateIndex.png
+│  │  trash.png
+│  │  uni.png
+│  │  uni.ttf
+│  │  
+│  └─app-plus
+│          location@3x.png
+│          uni@2x.png
+│          
+├─store
+│      index.js
+│      
+└─wxcomponents
+    └─vant
+        ├─button
+        │      index.d.ts
+        │      index.js
+        │      index.json
+        │      index.wxml
+        │      index.wxss
+        │      
+        ├─common
+        │  │  color.d.ts
+        │  │  color.js
+        │  │  component.d.ts
+        │  │  component.js
+        │  │  index.wxss
+        │  │  utils.d.ts
+        │  │  utils.js
+        │  │  
+        │  └─style
+        │      │  clearfix.wxss
+        │      │  ellipsis.wxss
+        │      │  hairline.wxss
+        │      │  var.wxss
+        │      │  
+        │      └─mixins
+        │              clearfix.wxss
+        │              ellipsis.wxss
+        │              hairline.wxss
+        │              
+        ├─loading
+        │      index.d.ts
+        │      index.js
+        │      index.json
+        │      index.wxml
+        │      index.wxss
+        │      
+        ├─mixins
+        │  │  basic.d.ts
+        │  │  basic.js
+        │  │  button.d.ts
+        │  │  button.js
+        │  │  link.d.ts
+        │  │  link.js
+        │  │  open-type.d.ts
+        │  │  open-type.js
+        │  │  safe-area.d.ts
+        │  │  safe-area.js
+        │  │  touch.d.ts
+        │  │  touch.js
+        │  │  transition.d.ts
+        │  │  transition.js
+        │  │  
+        │  └─observer
+        │          behavior.d.ts
+        │          behavior.js
+        │          index.d.ts
+        │          index.js
+        │          props.d.ts
+        │          props.js
+        │          
+        └─wxs
+                array.wxs
+                bem.wxs
+                memoize.wxs
+                object.wxs
+                utils.wxs
+                
