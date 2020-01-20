@@ -27,6 +27,7 @@
     "@dcloudio/uni-app-plus": "^2.0.0-23320190923002",
     "@dcloudio/uni-h5": "^2.0.0-23320190923002",
     "@dcloudio/uni-helper-json": "*",
+    "@dcloudio/uni-migration": "^2.0.0-25120200103006",
     "@dcloudio/uni-mp-alipay": "^2.0.0-23320190923002",
     "@dcloudio/uni-mp-baidu": "^2.0.0-23320190923002",
     "@dcloudio/uni-mp-qq": "^2.0.0-23320190923002",
