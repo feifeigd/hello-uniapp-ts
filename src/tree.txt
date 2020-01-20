@@ -1,7 +1,7 @@
 ﻿
 E:.
 │  App.vue			OK
-│  main.js
+│  main.js			OK
 │  manifest.json
 │  package.json
 │  pages.json

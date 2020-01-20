@@ -1,137 +1,213 @@
-
-@font-face{
-	font-family: texticons;
-	font-weight: normal;
-	font-style: normal;
-	src: url("https://at.alicdn.com/t/font_702773_ttt8tj203j.ttf") format("truetype");
+@font-face {
+    font-family: texticons;
+    font-weight: normal;
+    font-style: normal;
+    src: url("https://at.alicdn.com/t/font_702773_ttt8tj203j.ttf") format("truetype");
 }
 
-.index{
-	flex: 1;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+.index {
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.row{
-	flex-direction: row;
+.row {
+    flex-direction: row;
 }
 
-.column{
-	flex-direction: column;
+.column {
+    flex-direction: column;
+}
+page,
+view {
+    display: flex;
+    /* uni-app默认使用flex布局。因为flex布局有利于跨更多平台，尤其是采用原生渲染的平台。如不了解flex布局，请参考http://www.w3.org/TR/css3-flexbox/。若不需要flex布局可删除本行*/
 }
 
-page, view{
-	display: flex;
+page {
+    min-height: 100%;
 }
-
-page{
-	min-height: 100%;
-}
-
 /* 个人中心 */
 
-.center{
-	flex-direction: column;
+.center {
+    flex-direction: column;
 }
 
-.logo{
-	width: 750upx;
-	height: 240upx;
-	padding: 20upx;
-	box-sizing: border-box;
-	background-color: #fb6f18;
-	flex-direction: row;
-	align-items: center;
+.logo {
+    width: 750upx;
+    height: 240upx;
+    padding: 20upx;
+    box-sizing: border-box;
+    background-color: #fb6f18;
+    flex-direction: row;
+    align-items: center;
 }
 
-.logo-hover{
-	opacity: 0.8;
+.logo-hover {
+    opacity: 0.8;
 }
 
-.logo-img{
-	width: 150upx;
-	height: 150upx;
-	border-radius: 150upx;
+.logo-img {
+    width: 150upx;
+    height: 150upx;
+    border-radius: 150upx;
 }
 
-.logo-title{
-	height: 150upx;
-	flex: 1;
-	align-items: center;
-	justify-content: space-between;
-	flex-direction: row;
-	margin-left: 20upx;
+.logo-title {
+    height: 150upx;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-left: 20upx;
 }
 
-.user-name{
-	height: 60upx;
-	line-height: 60upx;
-	font-size: 38upx;
-	color: #FFFFFF;
+.uer-name {
+    height: 60upx;
+    line-height: 60upx;
+    font-size: 38upx;
+    color: #ffffff;
 }
 
-.go-login.navigat-arrow{
-	font-size: 38upx;
-	color: #FFFFFF;
+.go-login.navigat-arrow {
+    font-size: 38upx;
+    color: #ffffff;
 }
 
-.login-title{
-	height: 150upx;
-	align-items: self-start;	
-	justify-content: center;
-	flex-direction: column;
-	margin-left: 20upx;
+.login-title {
+    height: 150upx;
+    align-items: self-start;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 20upx;
 }
 
-.center-list{
-	background-color: #FFFFFF;
-	margin-top: 20upx;
-	width: 750upx;
-	flex-direction: column;
+.center-list {
+    background-color: #ffffff;
+    margin-top: 20upx;
+    width: 750upx;
+    flex-direction: column;
 }
 
-.center-list-item{
-	height: 90upx;
-	width: 750upx;
-	box-sizing: border-box;
-	flex-direction: row;
-	padding: 0upx 20upx;
+.center-list-item {
+    height: 90upx;
+    width: 750upx;
+    box-sizing: border-box;
+    flex-direction: row;
+    padding: 0upx 20upx;
 }
 
-.border-bottom{
-	border-bottom-width: 1upx;
-	border-color: #C8C7CC;
-	border-bottom-style: solid;
+.border-bottom {
+    border-bottom-width: 1upx;
+    border-color: #c8c7cc;
+    border-bottom-style: solid;
 }
 
-.list-icon{
-	width: 40upx;
-	height: 90upx;
-	line-height: 90upx;
-	font-size: 34upx;
-	color: #fb6f18;
-	text-align: center;
-	font-family: texticons;
-	margin-right: 20upx;
+.list-icon {
+    width: 40upx;
+    height: 90upx;
+    line-height: 90upx;
+    font-size: 34upx;
+    color: #fb6f18;
+    text-align: center;
+    font-family: texticons;
+    margin-right: 20upx;
 }
 
-.list-text{
-	height: 90upx;
-	line-height: 90upx;
-	font-size: 34upx;
-	color: #555;
-	flex: 1;
-	text-align: left;
+.list-text {
+    height: 90upx;
+    line-height: 90upx;
+    font-size: 34upx;
+    color: #555;
+    flex: 1;
+    text-align: left;
 }
 
-/* 箭头 */
-.navigat-arrow{
-	height: 90upx;
-	width: 40upx;
-	line-height: 90upx;
-	font-size: 34upx;
-	color: #555;
-	text-align: right;
-	font-family: texticons;
+.navigat-arrow {
+    height: 90upx;
+    width: 40upx;
+    line-height: 90upx;
+    font-size: 34upx;
+    color: #555;
+    text-align: right;
+    font-family: texticons;
 }
+
+/* 登录 */
+
+.loginView {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    width: 750upx;
+    padding-top: 30upx;
+}
+
+.input-view {
+    border-bottom-style: solid;
+    border-bottom-width: 3upx;
+    border-bottom-color: #ddd;
+    background-color: #fff;
+    flex-direction: row;
+    width: 750upx;
+    padding: 20upx 20upx;
+    box-sizing: border-box;
+}
+
+.label-view {
+    width: 100upx;
+    height: 60upx;
+    align-items: center;
+    margin-right: 30upx;
+}
+
+.label {
+    flex: 1;
+    line-height: 60upx;
+    font-size: 38upx;
+    color: #555;
+    text-align: left;
+}
+
+.input {
+    flex: 1;
+    height: 60upx;
+    font-size: 38upx;
+    align-items: center;
+}
+
+.button-view {
+    width: 750upx;
+    margin-top: 50upx;
+    padding: 0 20upx;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+
+button {
+    width: 710upx;
+    height: 80upx;
+    line-height: 80upx;
+    text-align: center;
+    font-size: 38upx;
+}
+
+button.login {
+    background-color: #fb6f18;
+    color: #fff;
+}
+
+button.register {
+    margin-top: 30upx;
+    color: #fb6f18;
+    background-color: #fff;
+    border-color: #fb6f18;
+    border-width: 2upx;
+}
+
+.register.hover,
+.login.hover {
+    opacity: 0.6;
+}
+
